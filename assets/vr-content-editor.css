@@ -1,0 +1,105 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.divider {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 0;
+}
+.vr-menu {
+    background-color: #fff;
+    border: 1px solid #333;  
+    border-radius: 2px;
+    margin-bottom: 4px;
+    padding: 4px;
+}
+.vr-menu-container {
+    font-size: 14px;
+}
+.vr-menu-btn {
+    display: inline-block;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding: 0 4px;
+    vertical-align: middle;
+}
+.vr-menu-btn:hover {
+    border: 1px solid #ccc;
+}
+.vr-menu-btn .mdi {
+    font-size: 20px;
+}
+.vr-menu-content {
+    display: none;
+    position: absolute;
+    left: -1px;
+    top: 32px;
+    z-index: 1;
+    background-color: #fff;
+    border: 1px solid #ccc;  
+    border-radius: 2px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 200px;
+    text-align: left;
+}
+.vr-menu-content a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80;
+    color: #666;
+    padding: 4px;
+    margin: 4px 0;
+    text-decoration: none;
+}
+.vr-menu-content a:hover {
+    background-color: #f8f8f8;
+    color: #000;
+    text-decoration: none;
+}
+.vr-submenu {
+    display: none;
+    position: absolute;
+    left: 200px;
+    bottom: -1px;
+    z-index: 1;
+    background-color: #fff;
+    border: 1px solid #ccc;  
+    border-radius: 2px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 200px;
+    text-align: left;
+}
+.vr-menu-item {
+    display: flex;
+    align-items: center;
+}
+.vr-toolbar {
+    border: 1px solid #333;
+    border-radius: 2px;
+    margin-bottom: 4px;
+    padding: 4px 8px;
+}
+.vr-toolbar-container {
+    font-size: 14px;
+}
+.vr-editor {
+    background: #f8f8f8;
+    border: 1px solid #333; 
+    border-radius: 2px;
+    padding: 0 4px;
+}
+.vr-editor-container {
+    background: #fff;
+    height: 100%;
+    margin-bottom: 4px;
+    padding: 0 4px;
+    word-wrap: break-word;
+}
+.show {
+    display: block;
+}
