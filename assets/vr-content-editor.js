@@ -6,7 +6,7 @@ function openMenu(elm) {
             otherElement[i].classList.remove('show');
         }
     }
-
+    
     let focusElement = document.getElementById('vr-menu-content-' + elm);
     if (focusElement.classList.contains('show')) {
         focusElement.classList.remove('show');
@@ -20,6 +20,13 @@ function n(n) {
 }
 
 function openSubMenu(elm) {
+    let otherElement = document.getElementsByClassName('vr-submenu');
+    for (let i = 0; i < otherElement.length; i++) {
+        if (otherElement[i].classList.contains('show')) {
+            otherElement[i].classList.remove('show');
+        }
+    }
+    
     let focusElement = document.getElementById('vr-submenu-' + elm);
     if (focusElement.classList.contains('show')) {
         focusElement.classList.remove('show');

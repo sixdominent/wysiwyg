@@ -16,6 +16,8 @@ html {
 }
 .vr-menu-container {
     font-size: 14px;
+    margin: 0;
+    padding: 0;
 }
 .vr-menu-btn {
     display: inline-block;
@@ -36,8 +38,6 @@ html {
 .vr-menu-content {
     display: none;
     position: absolute;
-    left: -1px;
-    top: 32px;
     z-index: 1;
     background-color: #fff;
     border: 1px solid #ccc;  
@@ -45,38 +45,61 @@ html {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     min-width: 200px;
     text-align: left;
+    padding: 0;
+}    
+.vr-menu-content {
+    left: -1px;
+    top: 32px;
 }
-.vr-menu-content a {
+.vr-submenu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    border: 1px solid #ccc;  
+    border-radius: 2px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 200px;
+    text-align: left;
+    padding: 0;
+}   
+.vr-submenu.dropdown {
+    left: 200px;
+    top: -1px;
+}
+.vr-submenu.dropup {
+    left: 200px;
+    bottom: -1px;
+}
+.vr-menu-content  a,
+.vr-submenu  a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80;
     color: #666;
     padding: 4px;
     margin: 4px 0;
     text-decoration: none;
 }
-.vr-menu-content a:hover {
+.vr-menu-content a:hover,
+.vr-menu-content .submenu:hover,
+.vr-submenu a:hover {    
     background-color: #f8f8f8;
     color: #000;
     text-decoration: none;
 }
-.vr-submenu {
-    display: none;
-    position: absolute;
-    left: 200px;
-    bottom: -1px;
-    z-index: 1;
-    background-color: #fff;
-    border: 1px solid #ccc;  
-    border-radius: 2px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    min-width: 200px;
-    text-align: left;
-}
 .vr-menu-item {
     display: flex;
     align-items: center;
+}
+.vr-menu-item p,
+.vr-menu-item h1,
+.vr-menu-item h2,
+.vr-menu-item h3,
+.vr-menu-item h4,
+.vr-menu-item h5, 
+.vr-menu-item h6 {
+    margin: 4px 0;
 }
 .vr-toolbar {
     border: 1px solid #333;
@@ -102,4 +125,5 @@ html {
 }
 .show {
     display: block;
+    width: 200px;
 }

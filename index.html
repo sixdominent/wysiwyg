@@ -16,95 +16,148 @@
     <body>
         <div style="width: 800px;">
             <div class="vr-menu">
-                <div class="vr-menu-container">
-                    <div class="vr-menu-btn" onmouseover="openMenu('file');" id="vr-menu-file">
+                <ul class="vr-menu-container">
+                    <li class="vr-menu-btn" onmouseover="openMenu('file');" id="vr-menu-file">
                         File <span class="mdi mdi-menu-down"></span>
-                        <div class="vr-menu-content" id="vr-menu-content-file">
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-file-outline"></span>&nbsp;<span>New</span></div>
-                            </a>
-                            <hr class="divider" />
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-printer"></span>&nbsp;<span>Print</span></div>
-                            </a>
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-blank"></span>&nbsp;<span>Document properties</span></div>
-                            </a>
-                            <hr class="divider" />
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-export"></span>&nbsp;<span>Export</span></div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="vr-menu-btn" onmouseover="openMenu('edit');" id="vr-menu-edit">
+                        <ul class="vr-menu-content" id="vr-menu-content-file">
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-file-outline"></span>&nbsp;<span>New</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="divider" />
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-printer"></span>&nbsp;<span>Print</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-blank"></span>&nbsp;<span>Document properties</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="divider" />
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-export"></span>&nbsp;<span>Export</span></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="vr-menu-btn" onmouseover="openMenu('edit');" id="vr-menu-edit">
                         Edit <span class="mdi mdi-menu-down"></span>
-                        <div class="vr-menu-content" id="vr-menu-content-edit">
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-undo"></span>&nbsp;<span>Undo</span></div>
-                                <div class="vr-menu-item">Ctrl+Z</div>
-                            </a>
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-redo"></span>&nbsp;<span>Redo</span></div>
-                                <div class="vr-menu-item">Ctrl+Y</div>
-                            </a>
-                            <hr class="divider" />
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-content-cut"></span>&nbsp;<span>Cut</span></div>
-                                <div class="vr-menu-item">Ctrl+X</div>
-                            </a>
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-content-copy"></span>&nbsp;<span>Copy</span></div>
-                                <div class="vr-menu-item">Ctrl+C</div>
-                            </a>
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-content-paste"></span>&nbsp;<span>Paste</span></div>
-                                <div class="vr-menu-item">Ctrl+V</div>
-                            </a>
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-blank"></span>&nbsp;<span>Paste as Text</span></div>
-                            </a>
-                            <hr class="divider" />
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-select-all"></span>&nbsp;<span>Select All</span></div>
-                                <div class="vr-menu-item">Ctrl+A</div>
-                            </a>
-                            <hr class="divider" />
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-magnify"></span>&nbsp;<span>Find and Replace</span></div>
-                                <div class="vr-menu-item">Ctrl+F</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="vr-menu-btn" onmouseover="openMenu('view');" id="vr-menu-view">
+                        <ul class="vr-menu-content" id="vr-menu-content-edit">
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-undo"></span>&nbsp;<span>Undo</span></div>
+                                    <div class="vr-menu-item">Ctrl+Z</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-redo"></span>&nbsp;<span>Redo</span></div>
+                                    <div class="vr-menu-item">Ctrl+Y</div>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="divider" />
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-content-cut"></span>&nbsp;<span>Cut</span></div>
+                                    <div class="vr-menu-item">Ctrl+X</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-content-copy"></span>&nbsp;<span>Copy</span></div>
+                                    <div class="vr-menu-item">Ctrl+C</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-content-paste"></span>&nbsp;<span>Paste</span></div>
+                                    <div class="vr-menu-item">Ctrl+V</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-blank"></span>&nbsp;<span>Paste as Text</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="divider" />
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-select-all"></span>&nbsp;<span>Select All</span></div>
+                                    <div class="vr-menu-item">Ctrl+A</div>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="divider" />
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-magnify"></span>&nbsp;<span>Find and Replace</span></div>
+                                    <div class="vr-menu-item">Ctrl+F</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="vr-menu-btn" onmouseover="openMenu('view');" id="vr-menu-view">
                         View <span class="mdi mdi-menu-down"></span>
-                        <div class="vr-menu-content" id="vr-menu-content-view">
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-code-tags"></span>&nbsp;<span>Source code</span></div>
-                            </a>
-                            <hr class="divider" />
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-check"></span>&nbsp;<span>Visual aids</span></div>
-                            </a>
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-check"></span>&nbsp;<span>Show invisible characters</span></div>
-                            </a>
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-check"></span>&nbsp;<span>Show blocks</span></div>
-                            </a>
-                            <hr class="divider" />
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-eye"></span>&nbsp;<span>Preview</span></div>
-                            </a>
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-fullscreen"></span>&nbsp;<span>Full screen</span></div>
-                            </a>
-                            <hr class="divider" />
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-check"></span>&nbsp;<span>Show comments</span></div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="vr-menu-btn" onmouseover="openMenu('insert');" id="vr-menu-insert">
+                        <ul class="vr-menu-content" id="vr-menu-content-view">
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-code-tags"></span>&nbsp;<span>Source code</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="divider" />
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-check"></span>&nbsp;<span>Visual aids</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-check"></span>&nbsp;<span>Show invisible characters</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-check"></span>&nbsp;<span>Show blocks</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="divider" />
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-eye"></span>&nbsp;<span>Preview</span></div>
+                                </a>
+                            </li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-fullscreen"></span>&nbsp;<span>Full screen</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="divider" />
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-check"></span>&nbsp;<span>Show comments</span></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="vr-menu-btn" onmouseover="openMenu('insert');" id="vr-menu-insert">
                         Insert <span class="mdi mdi-menu-down"></span>
                         <div class="vr-menu-content" id="vr-menu-content-insert">
                             <a href="#">
@@ -149,151 +202,207 @@
                                 <div class="vr-menu-item"><span class="mdi mdi-table-of-contents"></span>&nbsp;<span>Table of Contents</span></div>
                             </a>
                             <hr class="divider" />
-                            <a href="#" onmouseover="openSubMenu('datetime');">
+                            <a href="#">
                                 <div class="vr-menu-item"><span class="mdi mdi-calendar-clock"></span>&nbsp;<span>Date/Time</span></div>
                                 <div class="vr-menu-item"><span class="mdi mdi-menu-right"></span></div>
-                                <div class="vr-submenu" id="vr-submenu-datetime">
-                                    <a href="#">
-                                        <div class="vr-menu-item"><span class="mdi mdi-clock-outline"></span>&nbsp;<span id="today-time-24"></span></div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="vr-menu-item"><span class="mdi mdi-calendar-today"></span>&nbsp;<span id="today-date-year"></span></div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="vr-menu-item"><span class="mdi mdi-clock-outline"></span>&nbsp;<span id="today-time-12"></span></div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="vr-menu-item"><span class="mdi mdi-calendar-today"></span>&nbsp;<span id="today-date-day"></span></div>
-                                    </a>
-                                </div>
                             </a>                            
                         </div>
-                    </div>
-                    <div class="vr-menu-btn" onmouseover="openMenu('format');" id="vr-menu-format">
+                    </li>
+                    <li class="vr-menu-btn" onmouseover="openMenu('format');" id="vr-menu-format">
                         Format <span class="mdi mdi-menu-down"></span>
-                        <div class="vr-menu-content" id="vr-menu-content-format">
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-format-bold"></span>&nbsp;<span>Bold</span></div>
-                                <div class="vr-menu-item">Ctrl+B</div>
-                            </a>
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-format-italic"></span>&nbsp;<span>Italic</span></div>
-                                <div class="vr-menu-item">Ctrl+I</div>
-                            </a>
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-format-underline"></span>&nbsp;<span>Underline</span></div>
-                                <div class="vr-menu-item">Ctrl+U</div>
-                            </a>
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-format-strikethrough-variant"></span>&nbsp;<span>Strikethrough</span></div>
-                            </a>
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-format-superscript"></span>&nbsp;<span>Superscript</span></div>
-                            </a>
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-format-subscript"></span>&nbsp;<span>Subscript</span></div>
-                            </a>
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-code-not-equal-variant"></span>&nbsp;<span>Code</span></div>
-                            </a>
-                            <hr class="divider" />
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-format-text"></span>&nbsp;<span>Format texts</span></div>
-                                <div class="vr-menu-item"><span class="mdi mdi-menu-right"></span></div>
-                            </a>   
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-format-font"></span>&nbsp;<span>Format fonts</span></div>
-                                <div class="vr-menu-item"><span class="mdi mdi-menu-right"></span></div>
-                            </a>   
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-format-size"></span>&nbsp;<span>Font sizes</span></div>
-                                <div class="vr-menu-item"><span class="mdi mdi-menu-right"></span></div>
-                            </a>   
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-apps"></span>&nbsp;<span>Alignment</span></div>
-                                <div class="vr-menu-item"><span class="mdi mdi-menu-right"></span></div>
-                            </a>
-                            <hr class="divider" />        
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-format-color-text"></span>&nbsp;<span>Text color</span></div>
-                                <div class="vr-menu-item"><span class="mdi mdi-menu-right"></span></div>
-                            </a>   
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-format-color-highlight"></span>&nbsp;<span>Background color</span></div>
-                                <div class="vr-menu-item"><span class="mdi mdi-menu-right"></span></div>
-                            </a>    
-                            <hr class="divider" />
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-format-clear"></span>&nbsp;<span>Clear format</span></div>
-                            </a>                               
-                        </div>
-                    </div>
-                    <div class="vr-menu-btn" onmouseover="openMenu('tools');" id="vr-menu-tools">
+                        <ul class="vr-menu-content" id="vr-menu-content-format">
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-format-bold"></span>&nbsp;<span>Bold</span></div>
+                                    <div class="vr-menu-item">Ctrl+B</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-format-italic"></span>&nbsp;<span>Italic</span></div>
+                                    <div class="vr-menu-item">Ctrl+I</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-format-underline"></span>&nbsp;<span>Underline</span></div>
+                                    <div class="vr-menu-item">Ctrl+U</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-format-strikethrough"></span>&nbsp;<span>Strikethrough</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-format-superscript"></span>&nbsp;<span>Superscript</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-format-subscript"></span>&nbsp;<span>Subscript</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-code-tags"></span>&nbsp;<span>Code</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="divider" />
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-format-text"></span>&nbsp;<span>Formats</span></div>
+                                    <div class="vr-menu-item"><span class="mdi mdi-menu-right"></span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-format-font"></span>&nbsp;<span>Fonts</span></div>
+                                    <div class="vr-menu-item"><span class="mdi mdi-menu-right"></span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-format-size"></span>&nbsp;<span>Font sizes</span></div>
+                                    <div class="vr-menu-item"><span class="mdi mdi-menu-right"></span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-apps"></span>&nbsp;<span>Alignment</span></div>
+                                    <div class="vr-menu-item"><span class="mdi mdi-menu-right"></span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="divider" />
+                            </li>
+                            <li>                            
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-format-color-text"></span>&nbsp;<span>Text color</span></div>
+                                    <div class="vr-menu-item"><span class="mdi mdi-menu-right"></span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-format-color-highlight"></span>&nbsp;<span>Background color</span></div>
+                                    <div class="vr-menu-item"><span class="mdi mdi-menu-right"></span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="divider" />
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-format-clear"></span>&nbsp;<span>Clear format</span></div>
+                                </a>
+                            </li>                            
+                        </ul>
+                    </li>
+                    <li class="vr-menu-btn" onmouseover="openMenu('tools');" id="vr-menu-tools">
                         Tools <span class="mdi mdi-menu-down"></span>
-                        <div class="vr-menu-content" id="vr-menu-content-tools">
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-check"></span>&nbsp;<span>Spellcheck</span></div>
-                            </a>
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-blank"></span>&nbsp;<span>Spellcheck Language</span></div>
-                                <div class="vr-menu-item"><span class="mdi mdi-menu-right"></span></div>    
-                            </a>
-                            <hr class="divider" />
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-human"></span>&nbsp;<span>Accessibility Checker</span></div>
-                            </a>
-                            <hr class="divider" />
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-counter"></span>&nbsp;<span>Word count</span></div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="vr-menu-btn" onmouseover="openMenu('table');" id="vr-menu-table">
+                        <ul class="vr-menu-content" id="vr-menu-content-tools">
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-check"></span>&nbsp;<span>Spellcheck</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-blank"></span>&nbsp;<span>Spellcheck Language</span></div>
+                                    <div class="vr-menu-item"><span class="mdi mdi-menu-right"></span></div>    
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="divider" />
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-human"></span>&nbsp;<span>Accessibility Checker</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="divider" />
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-counter"></span>&nbsp;<span>Word count</span></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="vr-menu-btn" onmouseover="openMenu('table');" id="vr-menu-table">
                         Table <span class="mdi mdi-menu-down"></span>
-                        <div class="vr-menu-content" id="vr-menu-content-table">
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-table-large"></span>&nbsp;<span>Table</span></div>
-                                <div class="vr-menu-item"><span class="mdi mdi-menu-right"></span></div> 
-                            </a>    
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-blank"></span>&nbsp;<span>Table properties</span></div>
-                                <div class="vr-menu-item"><span class="mdi mdi-menu-right"></span></div> 
-                            </a>
-                            <hr class="divider" />
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-table-remove"></span>&nbsp;<span>Delete table</span></div>
-                            </a>
-                            <hr class="divider" />
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-blank"></span>&nbsp;<span>Row</span></div>
-                                <div class="vr-menu-item"><span class="mdi mdi-menu-right"></span></div> 
-                            </a>    
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-blank"></span>&nbsp;<span>Column</span></div>
-                                <div class="vr-menu-item"><span class="mdi mdi-menu-right"></span></div> 
-                            </a>    
-                            <hr class="divider" />
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-blank"></span>&nbsp;<span>Cell</span></div>
-                                <div class="vr-menu-item"><span class="mdi mdi-menu-right"></span></div> 
-                            </a>    
-                        </div>
-                    </div>
-                    <div class="vr-menu-btn" onmouseover="openMenu('help');" id="vr-menu-help">
+                        <ul class="vr-menu-content" id="vr-menu-content-table">
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-table-large"></span>&nbsp;<span>Table</span></div>
+                                    <div class="vr-menu-item"><span class="mdi mdi-menu-right"></span></div> 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-blank"></span>&nbsp;<span>Table properties</span></div>
+                                    <div class="vr-menu-item"><span class="mdi mdi-menu-right"></span></div> 
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="divider" />
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-table-remove"></span>&nbsp;<span>Delete table</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="divider" />
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-blank"></span>&nbsp;<span>Row</span></div>
+                                    <div class="vr-menu-item"><span class="mdi mdi-menu-right"></span></div> 
+                                </a>
+                            </li>     
+                            <li>                            
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-blank"></span>&nbsp;<span>Column</span></div>
+                                    <div class="vr-menu-item"><span class="mdi mdi-menu-right"></span></div> 
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="divider" />
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-blank"></span>&nbsp;<span>Cell</span></div>
+                                    <div class="vr-menu-item"><span class="mdi mdi-menu-right"></span></div> 
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="vr-menu-btn" onmouseover="openMenu('help');" id="vr-menu-help">
                         Help <span class="mdi mdi-menu-down"></span>
-                        <div class="vr-menu-content" id="vr-menu-content-help">
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-help-circle-outline"></span>&nbsp;<span>Help</span></div>
-                            </a>
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-keyboard-outline"></span>&nbsp;<span>Shortcuts</span></div>
-                            </a>
-                            <a href="#">
-                                <div class="vr-menu-item"><span class="mdi mdi-numeric"></span>&nbsp;<span>Version</span></div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                        <ul class="vr-menu-content" id="vr-menu-content-help">
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-help-circle-outline"></span>&nbsp;<span>Help</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-keyboard-outline"></span>&nbsp;<span>Shortcuts</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="vr-menu-item"><span class="mdi mdi-numeric"></span>&nbsp;<span>Version</span></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
             <div class="vr-toolbar">
                 <div class="vr-toolbar-container">
@@ -307,6 +416,66 @@
                 </div>
             </div>
         </div>
+        
+        <!--
+            <div class="vr-submenu dropup" id="vr-submenu-datetime">
+                <a href="#">
+                    <div class="vr-menu-item"><span class="mdi mdi-clock-outline"></span>&nbsp;<span id="today-time-24"></span></div>
+                </a>
+                <a href="#">
+                    <div class="vr-menu-item"><span class="mdi mdi-calendar-today"></span>&nbsp;<span id="today-date-year"></span></div>
+                </a>
+                <a href="#">
+                    <div class="vr-menu-item"><span class="mdi mdi-clock-outline"></span>&nbsp;<span id="today-time-12"></span></div>
+                </a>
+                <a href="#">
+                    <div class="vr-menu-item"><span class="mdi mdi-calendar-today"></span>&nbsp;<span id="today-date-day"></span></div>
+                </a>
+            </div>
+            
+            <div class="vr-submenu dropdown" id="vr-submenu-formats">
+                <a href="#">
+                    <div class="vr-menu-item"><span class="mdi mdi-blank"></span>&nbsp;<p>Paragraph</p></div>
+                </a>
+                <a href="#">
+                    <div class="vr-menu-item"><span class="mdi mdi-blank"></span>&nbsp;<h1>Heading 1</h1></div>
+                </a>
+                <a href="#">
+                    <div class="vr-menu-item"><span class="mdi mdi-blank"></span>&nbsp;<h2>Heading 2</h2></div>
+                </a>
+                <a href="#">
+                    <div class="vr-menu-item"><span class="mdi mdi-blank"></span>&nbsp;<h3>Heading 3</h3></div>
+                </a>
+                <a href="#">
+                    <div class="vr-menu-item"><span class="mdi mdi-blank"></span>&nbsp;<h4>Heading 4</h4></div>
+                </a>
+                <a href="#">
+                    <div class="vr-menu-item"><span class="mdi mdi-blank"></span>&nbsp;<h5>Heading 5</h5></div>
+                </a>
+                <a href="#">
+                    <div class="vr-menu-item"><span class="mdi mdi-blank"></span>&nbsp;<h6>Heading 6</h6></div>
+                </a>
+            </div>
+            
+            <div class="submenu" id="vr-submenu-blocks">
+                <div class="vr-menu-item"><span class="mdi mdi-code-not-equal-variant"></span>&nbsp;<span>Blocks</span></div>
+                <div class="vr-menu-item"><span class="mdi mdi-menu-right"></span></div>
+                <div class="vr-submenu dropdown" id="vr-submenu-blocks">
+                    <a href="#">
+                        <div class="vr-menu-item"><span class="mdi mdi-blank"></span>&nbsp;<span>Paragraph</span></div>
+                    </a>
+                    <a href="#">
+                        <div class="vr-menu-item"><span class="mdi mdi-blank"></span>&nbsp;<span>Blockquote</span></div>
+                    </a>
+                    <a href="#">
+                        <div class="vr-menu-item"><span class="mdi mdi-blank"></span>&nbsp;<span>Div</span></div>
+                    </a>
+                    <a href="#">
+                        <div class="vr-menu-item"><span class="mdi mdi-blank"></span>&nbsp;<span>Pre</span></div>
+                    </a>
+                </div>
+            </div>
+        -->
         
         <script src="assets/vr-content-editor.js"></script>
     </body>
