@@ -46,6 +46,7 @@ html {
     min-width: 200px;
     text-align: left;
     padding: 0;
+    list-style: none;
 }    
 .vr-menu-content {
     left: -1px;
